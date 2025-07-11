@@ -47,6 +47,30 @@ Invader Geminiは、PythonのFlaskフレームワークとHTML5 Canvas、JavaScr
     *   **左右移動:** 矢印キーの `←` (左) と `→` (右)
     *   **弾の発射:** `スペースキー`
 
+## Renderへのデプロイ方法
+
+Invader GeminiをRenderにデプロイする手順は以下の通りです。
+
+1.  **`gunicorn`の追加:**
+    `requirements.txt`ファイルに`gunicorn`を追加します。
+    ```
+    Flask
+    gunicorn
+    ```
+
+2.  **Renderでの設定:**
+    Renderのダッシュボードで新しいWebサービスを作成し、以下の設定を行います。
+
+    *   **Build Command (ビルドコマンド):**
+        ```bash
+        pip install -r requirements.txt
+        ```
+    *   **Start Command (スタートコマンド):**
+        ```bash
+        gunicorn app:app
+        ```
+        これは、`app.py`ファイル内の`app`という名前のFlaskアプリケーションインスタンスをGunicornで実行することを意味します。
+
 ## 更新履歴
 
 ### 2025年7月11日
