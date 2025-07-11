@@ -78,3 +78,4 @@ Invader GeminiをRenderにデプロイする手順は以下の通りです。
 *   Flaskアプリケーションの基本構造 (`app.py`, `templates/index.html`, `static/css/style.css`, `static/js/game.js`) を作成。
 *   プレイヤーの移動と弾の発射、エイリアンの描画と基本的な衝突判定を実装。
 *   Gitリポジトリを初期化し、最初のコミットを実行。
+*   MITライセンスファイルを追加。
